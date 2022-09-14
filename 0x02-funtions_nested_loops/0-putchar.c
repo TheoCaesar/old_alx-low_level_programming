@@ -8,13 +8,14 @@
 int main(void)
 {
 	char arr[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-	int x;
+	int x = 0;
 
-	for (x = 0; x < 8; x++)
+	do
 	{
-		putchar("%c", arr[x]);
+		_putchar(arr[x]);
 		x++;
 	}
-	putchar('\n');
+	while (x <8);
+	_putchar('\n');
 	return (0);
 }
